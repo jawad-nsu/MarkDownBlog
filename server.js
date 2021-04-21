@@ -1,10 +1,10 @@
 const express = require('express')
-const app = express();
 const mongoose = require('mongoose')
-const articleRouter = require('./routes/articles')
-const Artist = require('./models/article')
-const methodOverride = require('method-override')
 const Article = require('./models/article')
+const articleRouter = require('./routes/articles')
+const methodOverride = require('method-override')
+const app = express();
+
 mongoose.connect('mongodb://localhost/blog', {
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
 })
